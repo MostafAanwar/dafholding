@@ -1,0 +1,28 @@
+
+<table style="width:100%">
+  <tr>
+    <th>ID</th>
+    <th>Product name</th>
+    <th>Price</th>
+    <th>Quantity</th>
+  </tr>
+  <tr *ngFor="let product of productsList" style="text-align: center;">
+    <td>{{product.id}}</td>
+    <td>{{product.product_name}}</td>
+    <td>{{product.price}}</td>
+    <td>{{product.quantity}}</td>
+  </tr>
+</table>
+<iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
+    <form action="http://localhost:3000/products" target="dummyframe" method="POST">
+      <input type="number" placeholder="product id" name="id" min="1" />
+      <input type="number" placeholder="product price" name="price" min="1" />
+      <input
+        type="number"
+        placeholder="product quantity"
+        name="quantity"
+        min="1"
+      />
+      <input type="text" placeholder="product name" name="product_name" />
+      <button type="submit">Submit</button>
+    </form>
