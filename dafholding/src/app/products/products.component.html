@@ -1,4 +1,3 @@
-
 <table style="width:100%">
   <tr>
     <th>ID</th>
@@ -13,16 +12,18 @@
     <td>{{product.quantity}}</td>
   </tr>
 </table>
-<iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
-    <form action="http://localhost:3000/products" target="dummyframe" method="POST">
-      <input type="number" placeholder="product id" name="id" min="1" />
-      <input type="number" placeholder="product price" name="price" min="1" />
-      <input
-        type="number"
-        placeholder="product quantity"
-        name="quantity"
-        min="1"
-      />
-      <input type="text" placeholder="product name" name="product_name" />
-      <button type="submit">Submit</button>
-    </form>
+<form action="http://localhost:3000/products" method="POST">
+  <input type="number" placeholder="product id" name="id" min="1" />
+  <br>
+  <br>
+  <input type="number" placeholder="product price" name="price" min="1" />
+  <br>
+  <br>
+  <input type="number" placeholder="product quantity" name="quantity" min="1" />
+  <br>
+  <br>
+  <input type="text" placeholder="product name" name="product_name" />
+  <br>
+  <br>
+  <button type="submit">Submit</button>
+</form>
